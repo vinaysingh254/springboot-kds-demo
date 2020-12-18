@@ -15,15 +15,14 @@ Then, start Minikube:
 ==== Create and run a simple Spring Boot app
 
 - Create a simple Boot app (You can also use https://start.spring.io/[Spring Initializr] web interface)
-+
-----
+-------
 curl https://start.spring.io/starter.zip -d bootVersion=2.0.0.M5 \
      -d dependencies=web,actuator,jpa \
      -d groupId=com.vs.k8s -d artifactId=springboot-kds-demo \
      -d name=springboot-kds-demo -d baseDir=springboot-kds-demo -o springboot-kds-demo.zip
 unzip springboot-kds-demo.zip
 cd springboot-kds-demo
-----
+-------
 
 
 - Add a property enabling the `/application/env` endpoint. This allows us to inspect environment variables added by Kubernetes.
