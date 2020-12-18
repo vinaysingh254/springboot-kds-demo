@@ -14,7 +14,7 @@ Then, start Minikube:
 
 ==== Create and run a simple Spring Boot app
 
-. Create a simple Boot app (You can also use https://start.spring.io/[Spring Initializr] web interface)
+# Create a simple Boot app (You can also use https://start.spring.io/[Spring Initializr] web interface)
 +
 ----
 curl https://start.spring.io/starter.zip -d bootVersion=2.0.0.M5 \
